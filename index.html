@@ -30,49 +30,49 @@
             <div class="container px-4">
                 <div class="row gx-5">
                     <!-- image part -->
-                    <div class="col-12 col-md-5 mb-5 my-3 image-part">
+                    <div class="col-12 col-md-5 mb-5 my-3 image-part d-flex align-items-center">
                         <div>
                             <img class="img-fluid" src="images/person-carrying-lot-cash.jpg" alt="">
                         </div>
                     </div>
                     <!-- form part -->
                     <div class="col-12 col-md-6 mb-5 form-part my-3">
-                        <div>
-                            <form class="mb-5">
+                        <div class="py-4">
+                            <div class="mb-5">
                                 <h4 class="text-center">Income</h4>
                                 <div class="row mb-3">
                                     <label for="incomeField" class="col-sm-2 col-form-label">Income :</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="incomeField">
+                                        <input id="income" type="text" class="form-control" id="incomeField">
                                     </div>
                                 </div>
                                 <h4 class="mt-3 text-center">Expenses</h4>
                                 <div class="row mb-3">
                                     <label for="foodField" class="col-sm-2 col-form-label">Food :</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="foodField">
+                                        <input  type="text" class="form-control" id="food">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="rentField" class="col-sm-2 col-form-label">Rent :</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="rentField">
+                                        <input type="text" class="form-control" id="rent">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="clothsField" class="col-sm-2 col-form-label">Cloths :</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="clothsField">
+                                        <input type="text" class="form-control" id="cloths">
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center">
-                                    <button type="submit" class="btn btn-primary mt-3">Calculate</button>
+                                    <button id="calculator" type="submit" class="btn btn-primary mt-3">Calculate</button>
                                 </div>
                                 <div>
                                     <h5 class="mt-3 text-center">Total Expenses: <span>000</span></h5>
-                                    <h5 class="mt-3 text-center">Balance: <span>000</span></h5>
+                                    <h5 class="mt-3 text-center">Balance: <span id="balance">000</span></h5>
                                 </div>
-                            </form>
+                            </div>
                             <form class="row row-cols-lg-auto g-3 align-items-center">
                                 <label for="savingsField" class="col-sm-2 col-form-label">Save</label>
                                 <div class="col-sm-10">
