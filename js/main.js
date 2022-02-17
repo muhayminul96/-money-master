@@ -3,7 +3,7 @@
 // input velue prossseing
 
 function inputProsseing(id){
-    inputText = document.getElementById(id).value;
+    const inputText = document.getElementById(id).value;
         if(isNaN(inputText)){
             alert('please check ' + id + ' field , it need a number' )
         }
@@ -12,6 +12,7 @@ function inputProsseing(id){
             inputValue = parseFloat(inputText)
 
             if(inputValue >= 0){
+               
                 return inputValue;
                 
             }
@@ -23,12 +24,13 @@ function inputProsseing(id){
     
 }
 
+//  this is balenceCalculator that deploy balence and expence
 
 function balenceCalculator(income,expence){
-    balence = income - expence
+    const balence = income - expence
 
     if(balence<0){
-        alert("vai apni mone hoi khoroc bashi kore felcen")
+        alert("vai apni khoroc bashi kore felcen, tai income baran")
     }
     else{
         document.getElementById('expence').innerText = expence;
@@ -41,20 +43,42 @@ function balenceCalculator(income,expence){
 
 // using calculate exience and income
 
-document.getElementById('calculator').addEventListener('click',function(){
-    incomeValue = inputProsseing('income');
-    foodValue = inputProsseing('food');
-    rentValue = inputProsseing('rent');
-    clothValue   = inputProsseing('cloth');
+document.getElementById('calculator-btn').addEventListener('click',function(){
+    const incomeValue = inputProsseing('income');
+    const foodValue = inputProsseing('food');
+    const rentValue = inputProsseing('rent');
+    const clothValue   = inputProsseing('cloth');
 
-    expence = foodValue + rentValue + clothValue;
-
+    const expence = foodValue + rentValue + clothValue;
 
     balenceCalculator(incomeValue,expence)
-
-
-
-
-    console.log(incomeValue)
+    
 })
+
+
+function savingsCalculator(income,parsentage){
+    const savings = income * parsentage / 100
+
+    balence = parseFloat(document.getElementById('balance').innerText)
+
+    console.log(balence)
+
+
+}
+
+
+// this is time to savaing part
+
+document.getElementById('save-btn').addEventListener('click',function(){
+    incomeValue = inputProsseing('income');
+    saveParsentence = inputProsseing('savings');
+
+    savingsCalculator(incomeValue,saveParsentence)
+
+    
+})
+
+
+
+
 
