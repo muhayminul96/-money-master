@@ -24,6 +24,20 @@ function inputProsseing(id){
 }
 
 
+function balenceCalculator(income,expence){
+    balence = income - expence
+
+    if(balence<0){
+        alert("vai apni mone hoi khoroc bashi kore felcen")
+    }
+    else{
+        document.getElementById('expence').innerText = expence;
+        document.getElementById('balance').innerText = balence;
+
+    }
+}
+
+
 
 // using calculate exience and income
 
@@ -33,7 +47,12 @@ document.getElementById('calculator').addEventListener('click',function(){
     rentValue = inputProsseing('rent');
     clothValue   = inputProsseing('cloth');
 
-    
+    expence = foodValue + rentValue + clothValue;
+
+
+    balenceCalculator(incomeValue,expence)
+
+
 
 
     console.log(incomeValue)
