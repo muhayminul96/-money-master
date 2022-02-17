@@ -17,7 +17,7 @@ function inputProsseing(id){
                 
             }
             else{
-                alert('please check ' + id + ' field , it need a positive number' + inputValue)
+                alert('please check ' + id + ' field , it need a positive number')
             }
 
         }
