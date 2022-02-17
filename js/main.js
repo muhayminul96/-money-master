@@ -33,8 +33,14 @@ function balenceCalculator(income,expence){
         alert("vai apni khoroc bashi kore felcen, tai income baran")
     }
     else{
-        document.getElementById('expence').innerText = expence;
-        document.getElementById('balance').innerText = balence;
+        if(isNaN(balence)){
+
+        }
+        else{
+            document.getElementById('expence').innerText = expence;
+            document.getElementById('balance').innerText = balence;
+        }
+        
 
     }
 }
