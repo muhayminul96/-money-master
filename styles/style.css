@@ -1,9 +1,15 @@
 body {
-    width: 30%;
+    width: 90%;
     margin: 10px auto;
-    background-color: aquamarine;
+    background-color: azure;
+
 }
 
-div {
-    background-color: blue;
+.form-part {
+    background-color: rgba(209, 246, 222, 0.877);
+    font-weight: 600;
+}
+
+.image-part {
+    background-color: rgba(253, 253, 202, 0.966);
 }
