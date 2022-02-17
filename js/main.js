@@ -61,6 +61,16 @@ function savingsCalculator(income,parsentage){
 
     balence = parseFloat(document.getElementById('balance').innerText)
 
+    if(balence < savings){
+        alert('sir you can not save ' + savings + ' taka. your balance is low')
+    }
+
+    else{
+        document.getElementById('savings-amount').innerText = savings;
+        document.getElementById('remaining-ba
+        lence').innerText = balence - savings   ;
+    }
+
     console.log(balence)
 
 
