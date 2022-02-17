@@ -5,11 +5,11 @@
 function inputProsseing(id){
     const inputText = document.getElementById(id).value;
         if(isNaN(inputText)){
-            alert('please check ' + id + ' field , it need a number' )
+            alert('please check ' + id + ' field , it need a number' );
         }
 
         else{
-            inputValue = parseFloat(inputText)
+            inputValue = parseFloat(inputText);
 
             if(inputValue >= 0){
                
@@ -27,9 +27,9 @@ function inputProsseing(id){
 //  this is balenceCalculator that deploy balence and expence
 
 function balenceCalculator(income,expence){
-    const balence = income - expence
+    const balence = income - expence ;
 
-    if(balence<0){
+    if(balence < 0){
         alert("vai apni khoroc bashi kore felcen, tai income baran")
     }
     else{
@@ -67,8 +67,7 @@ function savingsCalculator(income,parsentage){
 
     else{
         document.getElementById('savings-amount').innerText = savings;
-        document.getElementById('remaining-ba
-        lence').innerText = balence - savings   ;
+        document.getElementById('remaining-balence').innerText = balence - savings   ;
     }
 
     console.log(balence)
